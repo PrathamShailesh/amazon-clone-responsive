@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100;200&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+header{
+    background-color: #121921;
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.location{
+    display: flex;
+    line-height: 1px;
+    color: white;
+}
+
+.loaction_logo{
+    display: flex;
+    align-items: center;
+}
+
+.address h4{
+    font-weight: 600;
+    color: grey;
+
+}
+
+.address h3{
+    font-weight: 800;
+}
+
+input{
+    height: 40px;
+    width: 50vw;
+    border-radius: 5px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    background-color: #FBBE67;
+    position: relative;
+    right: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+}
+
+.signin{
+    line-height: 0px;
+}
+
+.orders{
+    line-height: 0px;
+    padding-left: 10px;
+}
+.cart_logo{
+    display: flex;
+    align-items: center;
+}
+
+.navigation{
+    background-color: #243040;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.prime_day{
+    line-height: 0px;
+}
+
+.main{
+    background:linear-gradient(to bottom, transparent 50%, white 100%), url("./assets/background\ picture.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 40vh;
+}
+.boxes{
+    color: black;
+    width: min-content;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.allbox{
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+
+.box1{
+    padding: 10px;
+}
+
+.collage{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media (max-width:800px){
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    .navigation{
+        flex-wrap: wrap;
+    }
+
+    .disable{
+        display: none;
+    }
+
+    .main{
+        background-size:140vw 150vh;
+        background-repeat: no-repeat;
+        border: none;
+    }
+
+    .boxes{
+        border: 1px solid grey;
+        margin: 6% 0;
+    }
+
+
+
+
+}
